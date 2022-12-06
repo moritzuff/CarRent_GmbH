@@ -1,11 +1,32 @@
-package carrent;
+package data.fahrzeuge;
 
 public class Lkw {
+    
+    private String name;
     private double laderaum;
     private double nutzlast;
     private double kmPreis;
     private int freieKmProTag;
     private String fuehrerscheinAnforderung;
+
+    public Lkw(String name, double laderaum, double nutzlast, double kmPreis, int freieKmProTag, String fuehrerscheinAnforderung) {
+        this.name = name;
+        this.laderaum = laderaum;
+        this.nutzlast = nutzlast;
+        this.kmPreis = kmPreis;
+        this.freieKmProTag = freieKmProTag;
+        this.fuehrerscheinAnforderung = fuehrerscheinAnforderung;
+    }
+    
+    
+    
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public double getLaderaum() {
         return laderaum;
