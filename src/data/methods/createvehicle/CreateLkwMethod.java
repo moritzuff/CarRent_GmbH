@@ -1,9 +1,9 @@
-package data.methods;
+package data.methods.createvehicle;
 
 import data.fahrzeuge.Lkw;
 import java.util.Scanner;
 
-public class CreateLkw {
+public class CreateLkwMethod {
 
     public void CreateLKW() {
         Scanner scanner = new Scanner(System.in);
