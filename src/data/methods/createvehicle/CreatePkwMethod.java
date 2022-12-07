@@ -9,7 +9,7 @@ public class CreatePkwMethod {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bitte geben Sie den Namen des PKWs ein.");
-        String pkwName = scanner.next();
+        String pkwName = scanner.nextLine();
         
         System.out.println("Bitte geben Sie den Grundtarif [EUR] ein.");
         int pkwGrundtarif = scanner.nextInt();

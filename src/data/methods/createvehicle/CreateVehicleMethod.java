@@ -14,7 +14,6 @@ public class CreateVehicleMethod {
             if (eingabe.equalsIgnoreCase("pkw")) {
                 new CreatePkwMethod().createPKW();
                 break;
-
             } else if (eingabe.equalsIgnoreCase("lkw")) {
                 new CreateLkwMethod().createLKW();
                 break;

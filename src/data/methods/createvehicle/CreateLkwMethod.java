@@ -9,7 +9,7 @@ public class CreateLkwMethod {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bitte geben Sie den Namen des LKWs ein.");
-        String lkwName = scanner.next();
+        String lkwName = scanner.nextLine();
 
         System.out.println("Bitte geben Sie den Laderaum [l] ein.");
         double lkwLaderaum = scanner.nextDouble();
@@ -24,7 +24,7 @@ public class CreateLkwMethod {
         int lkwFreieKm = scanner.nextInt();
 
         System.out.println("Bitte geben Sie die benötigte Fahrlizenz ein.");
-        String lkwFS = scanner.next();
+        String lkwFS = scanner.nextLine();
 
         Lkw lkw = new Lkw(lkwName, lkwLaderaum, lkwNutzlast, lkwKmPreis, lkwFreieKm, lkwFS);
         System.out.println("Der LKW " + lkwName + " wurde erfolgreich erstellt.");
