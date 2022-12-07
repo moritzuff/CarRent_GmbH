@@ -2,6 +2,7 @@ package carrent;
 
 import data.fahrzeuge.Lkw;
 import data.fahrzeuge.Pkw;
+import data.methods.CreateLkw;
 import java.util.Scanner;
 import data.methods.CreatePkw;
 
@@ -20,27 +21,9 @@ public class CarRent {
                 break;
 
             } else if (eingabe.equalsIgnoreCase("lkw")) {
-                System.out.println("Bitte geben Sie den Namen des LKWs ein.");
-                String lkwName = scanner.next();
-
-                System.out.println("Bitte geben Sie den Laderaum [l] ein.");
-                double lkwLaderaum = scanner.nextDouble();
-
-                System.out.println("Bitte geben Sie die Nutzlast [t] ein.");
-                double lkwNutzlast = scanner.nextDouble();
-
-                System.out.println("Bitte geben Sie den km-Preis [EUR] ein.");
-                double lkwKmPreis = scanner.nextDouble();
-
-                System.out.println("Bitte geben Sie die freien km pro Tag ein.");
-                int lkwFreieKm = scanner.nextInt();
-
-                System.out.println("Bitte geben Sie die benötigte Fahrlizenz ein.");
-                String lkwFS = scanner.next();
-
-                Lkw lkw = new Lkw(lkwName, lkwLaderaum, lkwNutzlast, lkwKmPreis, lkwFreieKm, eingabe);
-
+                new CreateLkw().CreateLKW();
                 break;
+                
             } else {
 
             }
