@@ -7,16 +7,6 @@ public class Pkw {
     private boolean verfuegbarkeit;
     private int tuerenazahl;
     private String getriebe;
-    
-    
-
-    public Pkw(String name, int grundtarif, boolean verfuegbarkeit, int tuerenazahl, boolean klimaanlage, boolean radio, int kmstand, String schutz, String schadstoffBKL, String treibstoff, String verbrauch, int tankvolumen, int leistung, String kennzeichen, int baujahr, int gewicht, boolean anhaengerkupplung, String getriebe) {
-        this.name = name;
-        this.grundtarif = grundtarif;
-        this.verfuegbarkeit = verfuegbarkeit;
-        this.tuerenazahl = tuerenazahl;
-        this.getriebe = getriebe;
-    }
 
     public Pkw(String name, int grundtarif, boolean verfuegbarkeit, int tuerenazahl, String getriebe) {
         this.name = name;
