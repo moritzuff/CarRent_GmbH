@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class CreateLkwMethod {
 
-    public void CreateLKW() {
+    public void createLKW() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bitte geben Sie den Namen des LKWs ein.");

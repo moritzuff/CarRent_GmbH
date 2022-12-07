@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class CreateVehicleMethod {
 
-    public void CreateVehicle() {
+    public void createVehicle() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("PKW oder LKW?");
         String eingabe = scanner.next();
@@ -12,14 +12,14 @@ public class CreateVehicleMethod {
         while (true) {
 
             if (eingabe.equalsIgnoreCase("pkw")) {
-                new CreatePkwMethod().CreatePKW();
+                new CreatePkwMethod().createPKW();
                 break;
 
             } else if (eingabe.equalsIgnoreCase("lkw")) {
-                new CreateLkwMethod().CreateLKW();
+                new CreateLkwMethod().createLKW();
                 break;
             } else {
-                CreateVehicle();
+                createVehicle();
             }
         }
     }

@@ -5,17 +5,15 @@ import java.util.Scanner;
 
 public class CreatePkwMethod {
 
-    public void CreatePKW() {
+    public void createPKW() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Bitte geben Sie den Namen des PKWs ein.");
         String pkwName = scanner.next();
-
+        
         System.out.println("Bitte geben Sie den Grundtarif [EUR] ein.");
-
         int pkwGrundtarif = scanner.nextInt();
-        System.out.println("Sie müssen eine Zahl eingeben.");
-
+        
         System.out.println("Bitte geben Sie die Anzahl der Tueren ein.");
         int pkwTueren = scanner.nextInt();
 
