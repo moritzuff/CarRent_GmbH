@@ -1,5 +1,7 @@
 package data.fahrzeuge;
 
+import java.util.Scanner;
+
 public class Lkw {
     
     private String name;
@@ -17,8 +19,11 @@ public class Lkw {
         this.freieKmProTag = freieKmProTag;
         this.fuehrerscheinAnforderung = fuehrerscheinAnforderung;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "Lkw{" + "name=" + name + ", laderaum=" + laderaum + ", nutzlast=" + nutzlast + ", kmPreis=" + kmPreis + ", freieKmProTag=" + freieKmProTag + ", fuehrerscheinAnforderung=" + fuehrerscheinAnforderung + '}';
+    }
     
     public String getName() {
         return name;
@@ -66,6 +71,31 @@ public class Lkw {
 
     public void setFuehrerscheinAnforderung(String fuehrerscheinAnforderung) {
         this.fuehrerscheinAnforderung = fuehrerscheinAnforderung;
+    }
+    
+    public void createLKW() {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Bitte geben Sie den Namen des LKWs ein.");
+        String lkwName = scanner.nextLine();
+
+        System.out.println("Bitte geben Sie den Laderaum [l] ein.");
+        double lkwLaderaum = scanner.nextDouble();
+
+        System.out.println("Bitte geben Sie die Nutzlast [t] ein.");
+        double lkwNutzlast = scanner.nextDouble();
+
+        System.out.println("Bitte geben Sie den km-Preis [EUR] ein.");
+        double lkwKmPreis = scanner.nextDouble();
+
+        System.out.println("Bitte geben Sie die freien km pro Tag ein.");
+        int lkwFreieKm = scanner.nextInt();
+
+        System.out.println("Bitte geben Sie die benötigte Fahrlizenz ein.");
+        String lkwFS = scanner.nextLine();
+
+        Lkw lkw = new Lkw(lkwName, lkwLaderaum, lkwNutzlast, lkwKmPreis, lkwFreieKm, lkwFS);
+        System.out.println("Der LKW " + lkwName + " wurde erfolgreich erstellt.");
     }
     
 }
