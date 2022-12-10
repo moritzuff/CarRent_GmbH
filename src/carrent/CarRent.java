@@ -45,6 +45,31 @@ public class CarRent {
         System.out.println(p2);
         System.out.println(p3);
 
+        System.out.println("");
+        System.out.println("Von welchem PKW willst du den Namen ändern?");
+        String tmpName = scanner.nextLine();
+
+        if (tmpName.equalsIgnoreCase("p1")) {
+            System.out.println("Neuer Name: ");
+            String pkwNameNew = scanner.nextLine();
+            p1.setName(pkwNameNew);
+        } else if (tmpName.equalsIgnoreCase("p2")) {
+            System.out.println("Neuer Name: ");
+            String pkwNameNew = scanner.nextLine();
+            p2.setName(pkwNameNew);
+        } else if (tmpName.equalsIgnoreCase("p3")) {
+            System.out.println("Neuer Name: ");
+            String pkwNameNew = scanner.nextLine();
+            p3.setName(pkwNameNew);
+        } else {
+            System.out.println("Es wurde kein PKW mit dem Namen gefunden.");
+        }
+        
+        System.out.println("Aktualisierte Daten: ");
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
+
     }
 
 }
