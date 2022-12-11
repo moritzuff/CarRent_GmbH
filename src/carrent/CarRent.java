@@ -44,7 +44,7 @@ public class CarRent {
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
-
+        
         System.out.println("");
         System.out.println("Von welchem PKW willst du den Namen ändern?");
         String tmpName = scanner.nextLine();
@@ -69,6 +69,7 @@ public class CarRent {
         System.out.println(p1);
         System.out.println(p2);
         System.out.println(p3);
+        System.out.println("github test teams");
 
     }
 
