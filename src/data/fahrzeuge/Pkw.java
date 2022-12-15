@@ -9,18 +9,38 @@ public class Pkw {
     private boolean verfuegbarkeit;
     private int tuerenazahl;
     private String getriebe;
+    private double tankMax;
+    private double tank;
 
-    public Pkw(String name, int grundtarif, boolean verfuegbarkeit, int tuerenazahl, String getriebe) {
+    public Pkw(String name, int grundtarif, boolean verfuegbarkeit, int tuerenazahl, String getriebe, double tankMax, double tank) {
         this.name = name;
         this.grundtarif = grundtarif;
         this.verfuegbarkeit = verfuegbarkeit;
         this.tuerenazahl = tuerenazahl;
         this.getriebe = getriebe;
+        this.tankMax = tankMax;
+        this.tank = tank;
     }
 
     @Override
     public String toString() {
-        return "Pkw{" + "name=" + name + ", grundtarif=" + grundtarif + ", verfuegbarkeit=" + verfuegbarkeit + ", tuerenazahl=" + tuerenazahl + ", getriebe=" + getriebe + '}';
+        return "Pkw{" + "name=" + name + ", grundtarif=" + grundtarif + ", verfuegbarkeit=" + verfuegbarkeit + ", tuerenazahl=" + tuerenazahl + ", getriebe=" + getriebe + ", tankMax=" + tankMax + ", tank=" + tank + '}';
+    }
+
+    public double getTankMax() {
+        return tankMax;
+    }
+
+    public void setTankMax(double tankMax) {
+        this.tankMax = tankMax;
+    }
+
+    public double getTank() {
+        return tank;
+    }
+
+    public void setTank(double tank) {
+        this.tank = tank;
     }
 
     public String getName() {
@@ -62,7 +82,8 @@ public class Pkw {
     public void setGetriebe(String getriebe) {
         this.getriebe = getriebe;
     }
-
+    
+    /*
     public void createPKW() {
         Scanner scanner = new Scanner(System.in);
 
@@ -81,5 +102,6 @@ public class Pkw {
         Pkw pkw = new Pkw(pkwName, pkwGrundtarif, true, pkwTueren, pkwGetriebe);
         System.out.println("Der PKW " + pkwName + " wurde erfolgreich erstellt.");
     }
+*/
 
 }
